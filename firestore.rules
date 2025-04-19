@@ -1,0 +1,34 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+    
+    // Ingredients rules
+    match /ingredients/{ingredientId} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated() && request.resource.data.userId == request.auth.uid;
+      allow update, delete: if isOwner(resource.data.userId);
+    }
+    
+    // Meals rules
+    match /meals/{mealId} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated() && request.resource.data.userId == request.auth.uid;
+      allow update, delete: if isOwner(resource.data.userId);
+    }
+    
+    // User profiles rules
+    match /userProfiles/{userId} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated() && userId == request.auth.uid;
+      allow update, delete: if isOwner(userId);
+    }
+  }
+}

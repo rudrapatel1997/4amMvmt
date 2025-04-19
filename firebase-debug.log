@@ -1,0 +1,254 @@
+[debug] [2025-04-19T14:04:40.516Z] ----------------------------------------------------------------------
+[debug] [2025-04-19T14:04:40.518Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\T937990\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-04-19T14:04:40.518Z] CLI Version:   14.2.0
+[debug] [2025-04-19T14:04:40.518Z] Platform:      win32
+[debug] [2025-04-19T14:04:40.518Z] Node Version:  v22.14.0
+[debug] [2025-04-19T14:04:40.519Z] Time:          Sat Apr 19 2025 10:04:40 GMT-0400 (Eastern Daylight Time)
+[debug] [2025-04-19T14:04:40.519Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-19T14:04:40.523Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-19T14:04:40.524Z] > authorizing via signed-in user (rudrapatel1997@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\T937990\Desktop\Cursor Project\4amMvmt
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-04-19T14:05:04.434Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:05:04.434Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:05:04.435Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-04-19T14:05:05.165Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-04-19T14:05:05.165Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project ammvmt-8e5ca (4AMMVMT) 
+[info] 
+=== Dataconnect Setup
+[debug] [2025-04-19T14:05:08.567Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:05:08.567Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:05:08.567Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/ammvmt-8e5ca/billingInfo [none]
+[debug] [2025-04-19T14:05:08.820Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/ammvmt-8e5ca/billingInfo 200
+[debug] [2025-04-19T14:05:08.820Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/ammvmt-8e5ca/billingInfo {"name":"projects/ammvmt-8e5ca/billingInfo","projectId":"ammvmt-8e5ca","billingAccountName":"","billingEnabled":false}
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2025-04-19T14:05:08.821Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:05:08.821Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:05:08.821Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/sqladmin.googleapis.com [none]
+[debug] [2025-04-19T14:05:08.821Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/sqladmin.googleapis.com x-goog-quota-user=projects/ammvmt-8e5ca
+[debug] [2025-04-19T14:05:09.365Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/sqladmin.googleapis.com 200
+[debug] [2025-04-19T14:05:09.365Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/sqladmin.googleapis.com [omitted]
+[warn] !  dataconnect: missing required API sqladmin.googleapis.com. Enabling now... 
+[debug] [2025-04-19T14:05:09.366Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:05:09.366Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:05:09.366Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/sqladmin.googleapis.com:enable [none]
+[debug] [2025-04-19T14:05:09.366Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/sqladmin.googleapis.com:enable x-goog-quota-user=projects/ammvmt-8e5ca
+[debug] [2025-04-19T14:05:09.603Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/sqladmin.googleapis.com:enable 200
+[debug] [2025-04-19T14:05:09.603Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/sqladmin.googleapis.com:enable [omitted]
+[debug] [2025-04-19T14:05:19.605Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:05:19.606Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:05:19.606Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/sqladmin.googleapis.com [none]
+[debug] [2025-04-19T14:05:19.606Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/sqladmin.googleapis.com x-goog-quota-user=projects/ammvmt-8e5ca
+[debug] [2025-04-19T14:05:20.025Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/sqladmin.googleapis.com 200
+[debug] [2025-04-19T14:05:20.026Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/sqladmin.googleapis.com [omitted]
+[info] +  dataconnect: required API sqladmin.googleapis.com is enabled 
+[info] +  Wrote dataconnect\dataconnect.yaml 
+[info] +  Wrote dataconnect\schema\schema.gql 
+[info] +  Wrote dataconnect\connector\connector.yaml 
+[info] +  Wrote dataconnect\connector\queries.gql 
+[info] +  Wrote dataconnect\connector\mutations.gql 
+[info] +  Detected WEB app in directory C:\Users\T937990\Desktop\Cursor Project\4amMvmt 
+[info] i  Detected react app. Enabling react generated SDKs. 
+[info] i  Writing your new SDK configuration to C:\Users\T937990\Desktop\Cursor Project\4amMvmt\dataconnect\connector/connector.yaml 
+[info] +  Wrote dataconnect\connector\connector.yaml 
+[info] i  dataconnect: downloading dataconnect-emulator-2.2.0.exe... {"metadata":{"emulator":{"name":"dataconnect"},"message":"downloading dataconnect-emulator-2.2.0.exe..."}}
+[debug] [2025-04-19T14:05:39.133Z] >>> [apiv2][query] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-windows-v2.2.0 
+[debug] [2025-04-19T14:05:39.345Z] <<< [apiv2][status] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-windows-v2.2.0 200
+[debug] [2025-04-19T14:05:39.345Z] <<< [apiv2][body] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-windows-v2.2.0 [stream]
+[debug] [2025-04-19T14:05:39.981Z] defaultcredentials: writing to file C:\Users\T937990\AppData\Roaming\firebase\rudrapatel1997_gmail_com_application_default_credentials.json
+[debug] [2025-04-19T14:05:39.982Z] Setting GAC to C:\Users\T937990\AppData\Roaming\firebase\rudrapatel1997_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"dataconnect"},"message":"Setting GAC to C:\\Users\\T937990\\AppData\\Roaming\\firebase\\rudrapatel1997_gmail_com_application_default_credentials.json"}}
+[info] I0419 10:05:43.558018    2672 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "C:\\Users\\T937990\\Desktop\\Cursor Project\\4amMvmt\\dataconnect-generated\\js\\default-connector"
+I0419 10:05:43.562282    2672 generate.go:40] Generated all sources. Writing them to disk...
+I0419 10:05:43.577542    2672 collector.go:107] connector "default" javascriptSdk wrote into "C:\\Users\\T937990\\Desktop\\Cursor Project\\4amMvmt\\dataconnect-generated\\js\\default-connector"
+Generated sources: react\package.json [468B] react\esm\package.json [17B] react\esm\index.esm.js [0B] index.d.ts [246B] esm\index.esm.js [110B] index.cjs.js [145B] package.json [860B] react\index.d.ts [228B] react\README.md [5417B] esm\package.json [17B] README.md [2774B] react\index.cjs.js [0B] 
+I0419 10:05:43.594371    2672 installsdk.go:80] Running command: C:\Program Files\nodejs\npm.cmd install file:dataconnect-generated\js\default-connector
+
+[info] i  Generated SDK code for default 
+[info] i  Visit https://firebase.google.com/docs/data-connect/web-sdk#react for more information on how to set up React Generated SDKs for Firebase Data Connect 
+[info] +  If you'd like to add more generated SDKs to your app your later, run firebase init dataconnect:sdk again 
+[info] i  If you'd like to provision a CloudSQL Postgres instance on the Firebase Data Connect no-cost trial:
+1. Please upgrade to the pay-as-you-go (Blaze) billing plan. Visit the following page:
+     https://console.firebase.google.com/project/ammvmt-8e5ca/usage/details
+2. Run firebase init dataconnect again to configure the Cloud SQL instance.
+3. Run firebase deploy --only dataconnect to deploy your Data Connect service. 
+[info] 
+=== Firestore Setup
+[debug] [2025-04-19T14:05:49.671Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:05:49.672Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:05:49.672Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/firestore.googleapis.com [none]
+[debug] [2025-04-19T14:05:49.672Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/firestore.googleapis.com x-goog-quota-user=projects/ammvmt-8e5ca
+[debug] [2025-04-19T14:05:50.002Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/firestore.googleapis.com 200
+[debug] [2025-04-19T14:05:50.002Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/firestore.googleapis.com [omitted]
+[debug] [2025-04-19T14:05:50.003Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:05:50.003Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:05:50.003Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/ammvmt-8e5ca/databases/(default) [none]
+[debug] [2025-04-19T14:05:50.329Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/ammvmt-8e5ca/databases/(default) 200
+[debug] [2025-04-19T14:05:50.329Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/ammvmt-8e5ca/databases/(default) {"name":"projects/ammvmt-8e5ca/databases/(default)","uid":"cc8077b8-b6be-47fe-b870-647d6b171482","createTime":"2025-04-19T13:36:19.175052Z","updateTime":"2025-04-19T13:36:19.175052Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2025-04-19T13:36:19.175052Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","databaseEdition":"STANDARD","freeTier":true,"etag":"IOq+hY+i5IwDMPDI2a+f5IwD"}
+[debug] [2025-04-19T14:05:50.329Z] database_type: FIRESTORE_NATIVE
+[debug] [2025-04-19T14:05:50.329Z] database_type: FIRESTORE_NATIVE
+[debug] [2025-04-19T14:05:50.330Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-19T14:05:50.330Z] > authorizing via signed-in user (rudrapatel1997@gmail.com)
+[debug] [2025-04-19T14:05:50.330Z] [iam] checking project ammvmt-8e5ca for permissions ["firebase.projects.get"]
+[debug] [2025-04-19T14:05:50.330Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:05:50.330Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:05:50.330Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ammvmt-8e5ca:testIamPermissions [none]
+[debug] [2025-04-19T14:05:50.330Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ammvmt-8e5ca:testIamPermissions x-goog-quota-user=projects/ammvmt-8e5ca
+[debug] [2025-04-19T14:05:50.330Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ammvmt-8e5ca:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-04-19T14:05:50.637Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ammvmt-8e5ca:testIamPermissions 200
+[debug] [2025-04-19T14:05:50.637Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ammvmt-8e5ca:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-04-19T14:05:55.538Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:05:55.538Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:05:55.538Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/ammvmt-8e5ca/releases pageSize=10&pageToken=
+[debug] [2025-04-19T14:05:55.832Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/ammvmt-8e5ca/releases 200
+[debug] [2025-04-19T14:05:55.832Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/ammvmt-8e5ca/releases {"releases":[{"name":"projects/ammvmt-8e5ca/releases/cloud.firestore","rulesetName":"projects/ammvmt-8e5ca/rulesets/35ef4f10-8f52-49a6-b0c0-021968e3319b","createTime":"2025-04-19T13:36:21.404888Z","updateTime":"2025-04-19T13:54:09.564779Z"}]}
+[debug] [2025-04-19T14:05:55.832Z] Found ruleset: projects/ammvmt-8e5ca/rulesets/35ef4f10-8f52-49a6-b0c0-021968e3319b
+[debug] [2025-04-19T14:05:55.832Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:05:55.832Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:05:55.832Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/ammvmt-8e5ca/rulesets/35ef4f10-8f52-49a6-b0c0-021968e3319b [none]
+[debug] [2025-04-19T14:05:55.948Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/ammvmt-8e5ca/rulesets/35ef4f10-8f52-49a6-b0c0-021968e3319b 200
+[debug] [2025-04-19T14:05:55.949Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/ammvmt-8e5ca/rulesets/35ef4f10-8f52-49a6-b0c0-021968e3319b [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-04-19T14:05:59.474Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:05:59.474Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:05:59.474Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:05:59.474Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:05:59.474Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/ammvmt-8e5ca/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2025-04-19T14:05:59.475Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/ammvmt-8e5ca/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2025-04-19T14:05:59.722Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/ammvmt-8e5ca/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2025-04-19T14:05:59.722Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/ammvmt-8e5ca/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2025-04-19T14:05:59.731Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/ammvmt-8e5ca/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2025-04-19T14:05:59.731Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/ammvmt-8e5ca/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/ammvmt-8e5ca/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Genkit Setup
+[debug] [2025-04-19T14:06:03.489Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-19T14:06:03.490Z] > authorizing via signed-in user (rudrapatel1997@gmail.com)
+[debug] [2025-04-19T14:06:03.490Z] [iam] checking project ammvmt-8e5ca for permissions ["firebase.projects.get"]
+[debug] [2025-04-19T14:06:03.490Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:06:03.490Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:06:03.490Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ammvmt-8e5ca:testIamPermissions [none]
+[debug] [2025-04-19T14:06:03.490Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ammvmt-8e5ca:testIamPermissions x-goog-quota-user=projects/ammvmt-8e5ca
+[debug] [2025-04-19T14:06:03.490Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ammvmt-8e5ca:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-04-19T14:06:03.628Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ammvmt-8e5ca:testIamPermissions 200
+[debug] [2025-04-19T14:06:03.628Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ammvmt-8e5ca:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-04-19T14:06:03.628Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:06:03.628Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:06:03.629Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:06:03.629Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:06:03.629Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-04-19T14:06:03.629Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/ammvmt-8e5ca
+[debug] [2025-04-19T14:06:03.629Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-04-19T14:06:03.630Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/ammvmt-8e5ca
+[debug] [2025-04-19T14:06:03.939Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/runtimeconfig.googleapis.com 200
+[debug] [2025-04-19T14:06:03.939Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-04-19T14:06:03.940Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/cloudfunctions.googleapis.com 200
+[debug] [2025-04-19T14:06:03.940Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2025-04-19T14:06:03.940Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:06:03.940Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:06:03.940Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2025-04-19T14:06:03.940Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/ammvmt-8e5ca
+[debug] [2025-04-19T14:06:04.335Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2025-04-19T14:06:04.335Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2025-04-19T14:06:14.348Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:06:14.348Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:06:14.348Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-04-19T14:06:14.348Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/ammvmt-8e5ca
+[debug] [2025-04-19T14:06:14.663Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/cloudfunctions.googleapis.com 200
+[debug] [2025-04-19T14:06:14.663Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/tsconfig.json 
+[info] +  Wrote functions/tsconfig.dev.json 
+[info] +  Wrote functions/src/index.ts 
+[info] +  Wrote functions/.gitignore 
+[info] 
+[info] i  genkit: Installing Genkit CLI version 1.6.2
+ 
+[error] !!  genkit: Genkit initialization failed: Error: spawn(npm, [install, -g, genkit-cli@1.6.2
+]) 
+ exited with code: 1 
+[info] 
+=== Functions Setup
+[debug] [2025-04-19T14:07:10.742Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-19T14:07:10.742Z] > authorizing via signed-in user (rudrapatel1997@gmail.com)
+[debug] [2025-04-19T14:07:10.742Z] [iam] checking project ammvmt-8e5ca for permissions ["firebase.projects.get"]
+[debug] [2025-04-19T14:07:10.743Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:07:10.743Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:07:10.743Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ammvmt-8e5ca:testIamPermissions [none]
+[debug] [2025-04-19T14:07:10.743Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ammvmt-8e5ca:testIamPermissions x-goog-quota-user=projects/ammvmt-8e5ca
+[debug] [2025-04-19T14:07:10.743Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ammvmt-8e5ca:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-04-19T14:07:10.886Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ammvmt-8e5ca:testIamPermissions 200
+[debug] [2025-04-19T14:07:10.886Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ammvmt-8e5ca:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-04-19T14:07:10.886Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:07:10.886Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:07:10.886Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:07:10.886Z] Checked if tokens are valid: true, expires at: 1745075022032
+[debug] [2025-04-19T14:07:10.886Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-04-19T14:07:10.887Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/ammvmt-8e5ca
+[debug] [2025-04-19T14:07:10.888Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-04-19T14:07:10.888Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/ammvmt-8e5ca
+[debug] [2025-04-19T14:07:11.205Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/cloudfunctions.googleapis.com 200
+[debug] [2025-04-19T14:07:11.205Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2025-04-19T14:07:11.225Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/runtimeconfig.googleapis.com 200
+[debug] [2025-04-19T14:07:11.225Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ammvmt-8e5ca/services/runtimeconfig.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[error] Invalid codebase name. Codebase must be less than 64 characters and can contain only lowercase letters, numeric characters, underscores, and dashes.
+[error] Invalid codebase name. Codebase must be less than 64 characters and can contain only lowercase letters, numeric characters, underscores, and dashes.
+[info] +  Wrote mvmt/requirements.txt 
+[info] +  Wrote mvmt/.gitignore 
+[info] +  Wrote mvmt/main.py 
+[debug] [2025-04-19T14:08:00.929Z] Running command with virtualenv: command="C:\Users\T937990\Desktop\Cursor Project\4amMvmt\mvmt\venv\Scripts\activate.bat", args=["","&&","pip3","install","--upgrade","pip"]
+[debug] [2025-04-19T14:08:03.069Z] Error: spawn "C:\Users\T937990\Desktop\Cursor Project\4amMvmt\mvmt\venv\Scripts\activate.bat" ENOENT
+    at notFoundError (C:\Users\T937990\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:6:26)
+    at verifyENOENT (C:\Users\T937990\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:40:16)
+    at cp.emit (C:\Users\T937990\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:27:25)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+[error] 
+[error] Error: An unexpected error has occurred.
